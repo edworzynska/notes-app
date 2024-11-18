@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch"
+    "test": "jest",
+    "build": "esbuild index.js --bundle --outfile=bundle.js --watch --platform=node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "jest-environment-jsdom": "^29.7.0"
-  
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3"
   }
 }
